@@ -14,7 +14,7 @@ import lombok.ToString;
 public class FoodDTO {
 	
 	String date;
-	String fName;
+	String fname;
 	Integer qty;
 	Integer gram;
 	Integer kcal;

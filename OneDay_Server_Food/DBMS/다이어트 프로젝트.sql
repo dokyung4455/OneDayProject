@@ -68,7 +68,12 @@ mf_qty cHAR(3) NOT NULL
 ALTER TABLE tbl_myfoods
 ADD CONSTRAINT fk_myfoods_icode
 FOREIGN KEY (mf_icode)
-REFERENCES tbl_items(it_code);
+REFERENCES tbl_foods(fd_code);
+
+ALTER TABLE tbl_myfoods
+DROP CONSTRAINT fk_myfoods_icode;
+
+
 
 CREATE SEQUENCE seq_myfoods -- seq_적용대상테이블명
 START WITH 1 -- 시작값

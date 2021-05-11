@@ -12,14 +12,19 @@
 		<h3>식품섭취량 등록</h3>
 		<table>
 			<tr>
-				<th>섭취한 날짜</th>
+				<th>섭취한 음식 : </th>
+				<td><input name="FOOD" Value="${FOOD}"/> 코드 : <input name="CODE" value="${CODE}"/></td>
+			</tr>
+			<tr>
+				<th>섭취한 날짜 : </th>
 				<td><input name="date"></td>
 			</tr>
 
 			<tr>
-				<th>섭취량</th>
+				<th>섭취량 : </th>
 				<td><input name="qty"></td>
 			</tr>
+		
 
 			<tr>
 				<th></th>

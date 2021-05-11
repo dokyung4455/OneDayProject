@@ -15,6 +15,6 @@ public class FoodVO {
 	
 	String date;
 	String icode;
-	String qty;
+	Integer qty;
 
 }

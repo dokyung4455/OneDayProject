@@ -10,8 +10,8 @@ public class DBContract {
 	
 	static {
 		
-		String jdbcDriver = "oracle.jdbc.driver"; // 접속 드라이브 설정 oracle6
-		String url = "jdbd:oracle:thin:@localhost:1521:xe"; // DB 접속 경로
+		String jdbcDriver = "oracle.jdbc.OracleDriver"; // 접속 드라이브 설정 oracle6
+		String url = "jdbc:oracle:thin:@localhost:1521:xe"; // DB 접속 경로
 		String username = "food"; // DB 아이디
 		String password = "food"; // DB 패스워드
 		

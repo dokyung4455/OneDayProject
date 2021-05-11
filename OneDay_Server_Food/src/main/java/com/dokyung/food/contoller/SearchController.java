@@ -8,20 +8,21 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
-@WebServlet("/list")
-public class ListController extends HttpServlet{
+@WebServlet("/search")
+public class SearchController extends HttpServlet{
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
-		resp.setContentType("text/html;charset=UTF-8");
-		req.setCharacterEncoding("UTF-8");
+		
+		req.getRequestDispatcher("WEB-INF/views/search.jsp").forward(req, resp);
 		
 		
-		req.getRequestDispatcher("/WEB-INF/views/callIst.jsp").forward(req, resp);
-		
-		
+	}
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	
+				
 	}
 	
 	
